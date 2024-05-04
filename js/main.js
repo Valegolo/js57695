@@ -12,12 +12,10 @@ const superheroes = ['Superman', 'Spiderman', 'Batman', 'Mujer Maravilla', 'Iron
       attempts++;
 
       if (guess === secretHero.toLowerCase()) {
-        setMessage(`¡Felicidades! Adivinaste al superhéroe secreto ${secretHero} en ${attempts} intentos.`);
+        alert(`¡Felicidades! Adivinaste al superhéroe secreto ${secretHero} en ${attempts} intentos.`);
       } else {
-        setMessage('Ese no es el superhéroe secreto. ¡Inténtalo de nuevo!');
+        alert('Ese no es el superhéroe secreto. ¡Inténtalo de nuevo!');
       }
     }
-
-    function setMessage(message) {
-      document.getElementById('message').textContent = message;
-    }
+    
+   
